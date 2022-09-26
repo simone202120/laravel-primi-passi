@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/Home', function () {
     return view('Home');
 });
 
-Route::get('/', function () {
+Route::get('/Menu', function () {
 
     $vociMenu = ['body','footer','about us'];
     $titolo = 'MENU';
