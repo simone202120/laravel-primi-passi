@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Home');
+});
+
+Route::get('/', function () {
+
+    $vociMenu = ['body','footer','about us'];
+    $titolo = 'MENU';
+    return view('Menu', ['menu' => $vociMenu, 'titolo' => $titolo]);
 });
